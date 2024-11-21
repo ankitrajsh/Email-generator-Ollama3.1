@@ -22,3 +22,43 @@ This project demonstrates an AI-powered workflow using **LangChain**, **ChromaDB
    git clone <repository_url>
    cd <repository_directory>
 
+## Usage
+
+### 1. Web Scraping and Job Extraction
+The script uses `WebBaseLoader` to fetch web content and LangChain's prompt templates to extract job postings into JSON format. Example job attributes include:
+- `role`
+- `experience`
+- `skills`
+- `description`
+
+### 2. Portfolio Management with ChromaDB
+Store and query portfolio data in a vector database. This step involves:
+- Adding `tech stack` descriptions as vectors.
+- Associating links for portfolio examples.
+- Querying the database to find relevant projects based on job skills.
+
+### 3. Cold Email Generation
+LangChain pipelines generate dynamic, personalized emails tailored to job descriptions. The emails include links from the portfolio database to demonstrate expertise.
+
+## Running the Code
+
+### 1. Run `tutorial_groq.ipynb`:
+- Extract job information from web pages.
+- Generate personalized cold emails.
+
+### 2. Run `tutorial_chromadb.ipynb`:
+- Manage and query portfolio data.
+
+## Example Output
+
+**Email**:
+```plaintext
+Subject: Expert AI/ML Solutions for Nike's Data Science Services and Platform
+
+Dear Hiring Manager,
+
+... [personalized email content] ...
+Best regards,  
+Mohan  
+Business Development Executive  
+AtliQ
