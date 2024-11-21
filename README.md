@@ -21,7 +21,7 @@ This project demonstrates an AI-powered workflow using **LangChain**, **ChromaDB
    ```bash
    git clone <repository_url>
    cd <repository_directory>
-
+```
 ## Usage
 
 ### 1. Web Scraping and Job Extraction
@@ -48,6 +48,8 @@ LangChain pipelines generate dynamic, personalized emails tailored to job descri
 
 ### 2. Run `tutorial_chromadb.ipynb`:
 - Manage and query portfolio data.
+### 3. Use `main.py `:
+- Run on Streamlit directly 
 
 ## Example Output
 
